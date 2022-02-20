@@ -1,0 +1,35 @@
+.header__nav {
+    height: 73px;
+    box-shadow: 0 2px 4px hsl(0deg 0% 1% / 10%);
+}
+
+.header__nav-home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 173px;
+}
+
+.header__nav-item {
+    display: inline-block;
+    list-style: none;
+    line-height: 73px;
+    font-size: 1.6rem;
+}
+
+.header__member {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.header__member:hover {
+    color: var(--hover-color);
+}
+
+.header__member-first {
+    color: var(--first-color);
+}
+
+.header__member-second {
+    color: var(--second-color);
+}
