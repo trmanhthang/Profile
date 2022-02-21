@@ -1,8 +1,8 @@
 :root {
     --white-color: #fff;
     --black-color: #000;
-    --first-color: #37ada1;
-    --second-color: #333;
+    --text-color: #525760;
+    --hue-color: #37ada1;
     --hover-color: #71ded4;
 }
 
@@ -13,7 +13,7 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 100%;
     line-height: 1.6rem;
     font-family: 'Lexend', sans-serif;
     box-sizing: border-box;
