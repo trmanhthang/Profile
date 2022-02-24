@@ -4,6 +4,7 @@
     height: 73px;
     box-shadow: 0 2px 4px hsl(0deg 0% 1% / 10%);
     background-color: #fafcff;
+    z-index: 1;
 }
 
 .header__nav-home {
@@ -80,7 +81,7 @@
     color: var(--text-first-color);
 }
 
-/* HOME */
+/* PHẦN TRANG CHỦ */
 #home {
     max-width: 938px;
     padding: 104px 0;
@@ -101,7 +102,6 @@
 .home__data-job,
 .home__data-greeting {
     font-size: var(--small-font-size);
-    font-weight: var(--font-medium);
 }
 
 .home__data-name {
@@ -132,6 +132,7 @@
     padding: 0.75rem;    
     border-radius: 0.5rem;
     border: 2px solid var(--hue-color);
+    font-weight: var(--font-medium);
 }
 
 .button:hover {
@@ -175,6 +176,10 @@
 .scroll__item,
 .social__item {
     list-style: none;
+}
+
+.scroll__item,
+.instagram-item {
     margin: 10px 0;
 }
 
@@ -201,6 +206,91 @@
 
 .github-item:hover {
     background: #24292f;
+}
+
+/* HOME-iMG */
+.home__data-bottom-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient( 180deg, #35aca0, #adddda);
+    border-radius: 10rem 10rem 1rem 1rem;
+}
+
+/* HOME_SCROLL */
+.home__data-bottom-scroll {
+    display: grid;
+    row-gap: 1.25rem;
+    justify-items: center;
+    margin-bottom: 17px;
+}
+
+.scroll__item {
+    color: var(--text-first-color);
+}
+
+.scroll__item-name {
+    font-size: var(--small-font-size);
+    transform: rotate(-90deg);
+}
+
+/* PHẦN GIỚI THIỆU */
+#introduce {
+    padding: 104px 0;
+    text-align: center;
+}
+
+.section__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-first-color);
+}
+
+.section__title {
+    color: var(--hue-color);
+    margin-bottom: 3.5rem;
+}
+
+.introduce__container {
+    display: flex;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    column-gap: 4rem;
+}
+
+.introduce__img {
+    width: 350px;
+}
+
+.introduce__info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.info-box {
+    width: 140px;
+    height: 135px;
+    padding: 16px 20px;
+    background-color: var(--white-color);
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 8px hsla(219, 48%, 8%, 0.1);
+}
+
+.info-icon {
+    font-size: 20px;
+    color: var(--hue-color);
+    margin-bottom: 0.5rem;
+}
+
+.info-title {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semibold);
+    color: var(--text-first-color);
+}
+
+.info-subtitle {
+    font-size: var(--tiny-font-size);
 }
 
 
