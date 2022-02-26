@@ -126,10 +126,11 @@
 }
 
 .button {
+    display: inline-block;
     text-decoration: none;
     color: var(--text-first-color);
     background-color: var(--hue-color);
-    padding: 0.75rem;    
+    padding: 0.5rem;    
     border-radius: 0.5rem;
     border: 2px solid var(--hue-color);
     font-weight: var(--font-medium);
@@ -148,11 +149,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-}
-
-.home__data-bottom-img {
-    width: 290px;
-    height: 400px;
 }
 
 .home__img {
@@ -210,11 +206,14 @@
 
 /* HOME-iMG */
 .home__data-bottom-img {
+    width: 290px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     background: linear-gradient( 180deg, #35aca0, #adddda);
     border-radius: 10rem 10rem 1rem 1rem;
+    margin-left: 48px;
 }
 
 /* HOME_SCROLL */
@@ -255,7 +254,7 @@
     max-width: 968px;
     margin-left: auto;
     margin-right: auto;
-    column-gap: 4rem;
+    column-gap: 9rem;
 }
 
 .introduce__img {
@@ -264,7 +263,7 @@
 
 .introduce__info {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 2rem;
 }
 
@@ -293,6 +292,81 @@
     font-size: var(--tiny-font-size);
 }
 
+.introduce__description {
+    text-align: left;
+    margin-bottom: 0.8rem;
+    padding-right: 5rem;
+    font-size: var(--normal-font-size);
+    color: var(--text-second-color);
+}
+
+.introduce-button {
+    float: left;
+}
+
+/* PHẦN KỸ NĂNG */
+#skills {
+    padding: 104px 0;
+    text-align: center;
+}
+
+.skills__container {
+    max-width: 968px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skills__content {
+    min-width: 390px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 16px hsla( 219, 48%, 8%, 0.1);
+    padding: 2rem 4rem;
+}
+
+.skills__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: #26a699;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills__box {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+}
+
+.skills__group {
+    display: grid;
+    align-content: flex-start;
+    row-gap: 1rem;
+}
+
+.skills__data {
+    display: flex;
+    column-gap: 0.5rem;
+    text-align: left;
+}
+
+.fa-circle-check {
+    font-size: 1rem;
+    color: #26a699;
+}
+
+.skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    line-height: 17px;
+}
+
+.skills__level {
+    font-size: var(--tiny-font-size);
+    color: var(--text-second-color);
+}
 
 
 
