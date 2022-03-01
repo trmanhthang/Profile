@@ -4,7 +4,7 @@
     height: 73px;
     box-shadow: 0 2px 4px hsl(0deg 0% 1% / 10%);
     background-color: #fafcff;
-    z-index: 1;
+    z-index: 3;
 }
 
 .header__nav-home {
@@ -49,6 +49,7 @@
     background-color: hsl(219deg 33% 92% / 0.8);
     backdrop-filter: blur(10px);
     border-radius: 4rem;
+    z-index: 3;
 }
 
 .header__menu-list{
@@ -367,6 +368,227 @@
     font-size: var(--tiny-font-size);
     color: var(--text-second-color);
 }
+
+/* PHẦN SẢN PHẨM */
+#work {
+    padding: 104px 0;
+    text-align: center;
+}
+
+.work__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-second-color);
+}
+
+.work__card {
+    width: 340px;
+    background-color: var(--white-color);
+    box-shadow: 0 2px 16px hsla( 219, 48%, 8%, 0.1);
+    border-radius: 1rem;
+    padding: 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.work__img {
+    width: 295px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    color: var(--text-first-color);
+    margin-bottom: 0.5rem;
+}
+
+.work__button {
+    font-size: var(--small-font-size);
+    color: var(--hue-color);
+    text-decoration: none;
+}
+
+.work__button:hover .work__button-icon {
+    transform: translateX(0.25rem);
+}
+
+/* PHẦN LIÊN LẠC */
+#contact {
+    padding: 104px 0;
+    text-align: center;
+}
+
+.contact__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 6rem;
+}
+
+.contact__title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contact__info {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 300px;
+}
+
+.contact__card {
+    background-color: var(--white-color);
+    box-shadow: 0 2px 16px hsla( 219, 48%, 8%, 0.1);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.contact__card-icon {
+    font-size: 1.5rem;
+    color: var(--text-first-color);
+    margin-bottom: 0.25rem;
+}
+
+.contact__card-title {
+    font-weight: var(--font-medium);
+    font-size: var(--normal-font-size);
+    color: var(--text-first-color);
+}
+
+.contact__card-data {
+    display: block;
+    margin-bottom: 0.75rem;
+    font-size: var(--small-font-size);
+    color: var(--text-second-color);
+}
+
+.contact__button {
+    font-size: var(--small-font-size);
+    color: var(--hue-color);
+    text-decoration: none;
+}
+
+.contact__button:hover .contact__button-icon {
+    transform: translateX(0.25rem);
+}
+
+.contact__form {
+    width: 360px;
+    margin: 0 auto;
+}
+
+.contact__form-div {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    margin-bottom: 1.7rem;
+    height: 6rem;
+    flex: 1;
+}
+
+.contact__form-tag {
+    position: absolute;
+    top: -0.95rem;
+    left: 1.25rem;
+    font-size: var(--small-font-size);
+    padding: 0.25rem;
+    z-index: 2;
+    background-color: #fafcff;
+}
+
+.contact__form-input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    border: 2px solid #888b91;
+    background: none;
+    color: var(--text-second-color);
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    z-index: 1;
+}
+
+.contact__form-area {
+    height: 15rem;
+    margin-bottom: 2.3rem;
+}
+
+.contact__form-area textarea {
+    resize: none;
+    height: 14.8rem;
+}
+
+.form-submit {
+    display: inline-block;
+    float: left;
+    background-color: #26a699;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    transition: 0.4s;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* FOOTER */
+.footer {
+    background: #26a699;
+}
+
+.footer__container {
+    padding: 3rem 0rem 6rem;
+    text-align: center;
+}
+
+.footer__title {
+    margin-bottom: 2rem;
+    color: var(--text-first-color);
+}
+
+.footer__list {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.5rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.footer__link {
+    text-decoration: none;
+    color: var(--text-first-color);
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.25rem;
+}
+
+.footer__social-link {
+    height: 32px;
+    width: 32px;
+    padding-top: 4px;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    background-color: #21252c;
+    color: #26a699;
+}
+
+.footer__copy {
+    display: block;
+    margin-top: 4.5rem;
+    font-size: var(--small-font-size);
+    color: var(--text-first-color);
+}
+
+
 
 
 
