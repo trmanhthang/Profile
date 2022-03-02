@@ -16,11 +16,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
 }
 
 html {
+    
     scroll-behavior: smooth;
+    padding: 0 2px;
     font-size: 100%;
     line-height: 1.6rem;
     font-family: 'Lexend', sans-serif;

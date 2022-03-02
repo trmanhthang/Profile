@@ -8,9 +8,6 @@
 }
 
 .header__nav-home {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin: 0 173px;
 }
 
@@ -18,6 +15,10 @@
     display: inline-block;
     list-style: none;
     line-height: 73px;
+}
+
+.header__nav-item-icon {
+    float: right;
 }
 
 .header__member {
@@ -84,8 +85,7 @@
 
 /* PHẦN TRANG CHỦ */
 #home {
-    max-width: 938px;
-    padding: 104px 0;
+    padding: 104px 10px;
     display: grid;
     row-gap: 4.5rem;
 }
@@ -236,7 +236,7 @@
 
 /* PHẦN GIỚI THIỆU */
 #introduce {
-    padding: 104px 0;
+    padding: 104px 10px;
     text-align: center;
 }
 
@@ -263,14 +263,13 @@
 }
 
 .introduce__info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin-bottom: 2rem;
+    gap: 0.5rem;
 }
 
 .info-box {
-    width: 140px;
-    height: 135px;
     padding: 16px 20px;
     background-color: var(--white-color);
     border-radius: 0.75rem;
@@ -285,7 +284,6 @@
 
 .info-title {
     font-size: var(--small-font-size);
-    font-weight: var(--font-semibold);
     color: var(--text-first-color);
 }
 
@@ -307,7 +305,7 @@
 
 /* PHẦN KỸ NĂNG */
 #skills {
-    padding: 104px 0;
+    padding: 104px 10px;
     text-align: center;
 }
 
@@ -371,7 +369,7 @@
 
 /* PHẦN SẢN PHẨM */
 #work {
-    padding: 104px 0;
+    padding: 104px 10px;
     text-align: center;
 }
 
@@ -416,7 +414,7 @@
 
 /* PHẦN LIÊN LẠC */
 #contact {
-    padding: 104px 0;
+    padding: 104px 10px;
     text-align: center;
 }
 
@@ -524,13 +522,9 @@
 }
 
 .form-submit {
-    display: inline-block;
     float: left;
-    background-color: #26a699;
     padding: 1rem;
-    border-radius: 0.5rem;
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
     transition: 0.4s;
     cursor: pointer;
     border: none;
@@ -587,7 +581,7 @@
     font-size: var(--small-font-size);
     color: var(--text-first-color);
 }
-
+ 
 
 
 

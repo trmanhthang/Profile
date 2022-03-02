@@ -7,19 +7,20 @@
     <title>Trương Mạnh Thắng</title>
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/font-icons/fontawesome-free-6.0.0/css/all.min.css">
 </head>
 <body>
     <div class="main">
-        <header class="header">
+        <header class="header grid__full-width">
             <div class="header__nav grid__full-width">
                 <ul class="header__nav-home">
                     <li class="header__nav-item">
                         <a href="#home" class="header__member header__member-first">Trang Chủ</a>
                     </li>
 
-                    <li class="header__nav-item">
+                    <li class="header__nav-item header__nav-item-icon">
                         <a href="#" class="header__member header__member-second">
                             <i class="fa-solid fa-sun"></i>
                         </a>
@@ -64,7 +65,7 @@
             </div>
         </header>
 
-        <div class="container">
+        <div class="container grid__full-width">
             <div id="home" class="grid">
                 <div class="home__data">
                     <span class="home__data-greeting">Tôi là</span>
@@ -112,7 +113,7 @@
                 </div>
             </div>
 
-            <div id="introduce">
+            <div id="introduce" class="grid__full-width">
                 <span class="section__subtitle">Giới Thiệu</span>
                 <h2 class="section__title">Tôi</h2>
                 <div class="introduce__container">
@@ -139,7 +140,7 @@
                             </div>
                         </div>
                         <p class="introduce__description">Tôi cố gắng trở thành một studio thực thụ, bằng việc tự mình học hỏi nhiều công nghệ cũng như công cụ khác nhau của ngành công nghệ thông tin, cụ thể là: thiết kế đồ họa, làm game, thiết kế web.</p>
-                        <a href="" class="button introduce-button">Liên Lạc</a>
+                        <a href="#contact" class="button introduce-button">Liên Lạc</a>
                     </div>
                 </div>
             </div>
@@ -294,14 +295,14 @@
                                 <label for="" class="contact__form-tag">Lời Nhắn</label>
                                 <textarea name="message" id="message" cols="30" rows="10" class="contact__form-input" placeholder="Vui lòng để lại lời nhắn"></textarea>
                             </div>
-                            <button class="form-submit">Gửi Tin Nhắn</button>
+                            <button class="button form-submit">Gửi Tin Nhắn</button>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
 
-        <footer class="footer">
+        <footer class="footer grid__full-width">
             <div class="footer__container">
                 <h1 class="footer__title">Mạnh Thắng</h1>
                 <ul class="footer__list">
