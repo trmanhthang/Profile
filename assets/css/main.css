@@ -88,6 +88,7 @@
     padding: 104px 10px;
     display: grid;
     row-gap: 4.5rem;
+    justify-content: center;
 }
 
 /* HOME DATA */
@@ -220,7 +221,7 @@
 /* HOME_SCROLL */
 .home__data-bottom-scroll {
     display: grid;
-    row-gap: 1.25rem;
+    row-gap: 2rem;
     justify-items: center;
     margin-bottom: 17px;
 }
@@ -289,6 +290,7 @@
 
 .info-subtitle {
     font-size: var(--tiny-font-size);
+    font-weight: var(--font-semibold);
 }
 
 .introduce__description {
