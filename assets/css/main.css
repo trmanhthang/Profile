@@ -87,9 +87,6 @@
 /* PHẦN TRANG CHỦ */
 #home {
     padding: 104px 10px;
-    display: grid;
-    row-gap: 4.5rem;
-    justify-content: center;
 }
 
 /* HOME DATA */
@@ -154,10 +151,11 @@
     align-items: flex-end;
 }
 
-.home__img {
-    width: 220px;
-    max-width: 100%;
-    height: auto;
+.home__data-bottom-social {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100%;
 }
 
 .social__item {
@@ -177,17 +175,11 @@
     list-style: none;
 }
 
-.scroll__item,
 .instagram-item {
     margin: 10px 0;
 }
 
-.home__data-bottom-scroll {
-    text-decoration: none;
-}
-
-.social__item-link,
-.scroll__item {
+.social__item-link {
     color: var(--text-first-color);
 }
 
@@ -209,26 +201,44 @@
 
 /* HOME-iMG */
 .home__data-bottom-img {
-    width: 290px;
-    height: 400px;
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+}
+
+.container-img {
     background: linear-gradient( 180deg, #35aca0, #adddda);
-    border-radius: 10rem 10rem 1rem 1rem;
-    margin-left: 48px;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    width: 70%;
+}
+
+.home__img {
+    width: 100%;
+    height: 100%;
 }
 
 /* HOME_SCROLL */
+.container-scroll {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.container-scroll a {
+    text-decoration: none;
+}
+
 .home__data-bottom-scroll {
-    display: grid;
-    row-gap: 2rem;
-    justify-items: center;
-    margin-bottom: 17px;
+
 }
 
 .scroll__item {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     color: var(--text-first-color);
+    margin-bottom: 34px;
 }
 
 .scroll__item-name {

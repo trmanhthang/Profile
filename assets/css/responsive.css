@@ -49,13 +49,6 @@
         font-size: 32px;
     }
 
-    .home__data-bottom-img {
-        margin-left: 44px;
-        margin-right: 10px;
-        width: auto;
-        height: auto;
-    }
-
     .introduce__info {
         display: flex;
     }
